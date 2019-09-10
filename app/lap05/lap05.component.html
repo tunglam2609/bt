@@ -1,0 +1,30 @@
+<ul class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">HOME</a></li>
+    <li class="breadcrumb-item active"><a>SINHVIEN</a></li>
+  </ul>
+  <div class="card-footer"><a href="#"><b><i class="fas fa-table"></i> danh sách sinh viên</b></a></div>
+      <div class="col-4"><input class="form-control" id="myInput" type="text" placeholder="Search.."></div>
+  <table  class="table table-bordered">
+    <thead>
+      <tr>
+        <th>FirstMidName</th>
+        <th>LastName</th>
+        <th>EnrollmentDate</th>
+        <th>action</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let s of students ">
+      <td>{{s.FirstMidName}}</td>
+      <td>{{s.LastName}}</td>
+      <td>{{s.EnrollmentDate}}</td>
+      <td><button [routerLink]="['/students',s.ID]"><i class="fas fa-info-circle"></i></button></td>
+    </tr> 
+  </tbody>
+</table>
+<ul class="pagination justify-content-end">
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>

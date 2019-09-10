@@ -1,0 +1,28 @@
+<ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">HOME</a></li>
+        <li class="breadcrumb-item active"><a>SINHVIEN</a></li>
+        <li class="breadcrumb-item active"><a>{{student.LastName}}</a></li>
+      </ul>
+      <div class="card-footer"><a href="#"><b><i class="fas fa-table"></i> Details</b></a></div>
+          <p>First Name</p>
+          <p>{{student.FirstMidName}}</p>
+          <p>Lastt Name</p>
+          <p>{{student.LastName}}</p>
+          <p>Enrolment Date</p>
+          <p>{{student.EnrollmentDate}}</p>
+        <table  class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Course Title</th>
+                <th>grade</th>
+                <th>credits</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let stu of course">
+              <td>{{stu.Title}}</td>
+              <td>{{stu.Grade}}</td>
+              <td>{{stu.Credits}}</td>
+            </tr> 
+          </tbody>
+        </table>

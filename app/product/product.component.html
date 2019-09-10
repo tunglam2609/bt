@@ -1,0 +1,65 @@
+<div class="card">
+  <div class="card-header">leaf rake</div>
+  <div class="card-body">
+    <img src="assets\taixuong.jpg" width="300px" height="300px">
+    <div class="row">
+      <div class="col-4">name:</div>
+      <div class="col-4">leaf rake</div>
+    </div>
+    <div class="row">
+      <div class="col-4">code</div>
+      <div class="col-4">GND=0011</div>
+    </div>
+    <div class="row">
+      <div class="col-4">description</div>
+      <div class="col-4">leaf rake with 48-inch wooden handle</div>
+    </div>
+    <div class="row">
+      <div class="col-4">availability</div>
+      <div class="col-4">march 19,2018</div>
+    </div>
+    <div class="row">
+      <div class="col-4">price</div>
+      <div class="col-4">$19.85</div>
+    </div>
+    <div class="row">
+      <div class="col-4">5 star rating</div>
+      <div class="col-4">3.2</div>
+    </div>
+  </div>
+
+  <div class="card-footer"><a href="#"><b>&larr; Back</b></a></div>
+</div>
+<div>
+  <div class="card-footer"><a href="#"><b> List product</b></a></div>
+  <div class="container">
+    <div class="container mt-3">
+      <div class="row">
+      <div class="col-3"><h2>List product</h2></div>
+      <div class="col-4"><input class="form-control" id="myInput" type="text" placeholder="Search.."></div>
+    </div>
+      <br>
+      <table class="table">
+        <thead>
+          <tr>
+            <th> <button (click)="anhien()">hien image</button></th>
+            <th>
+              <p>product</p>
+            </th>
+            <th>code </th>
+            <th>available</th>
+            <th>price</th>
+            <th>5 star rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let p of list">
+            <td><img *ngIf=image src="{{p.image}}" height="50px" width="50px"></td>
+            <td>{{p.product}}</td>
+            <td>{{p.code}}</td>
+            <td>{{p.available}}</td>
+            <td>{{p.price}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
