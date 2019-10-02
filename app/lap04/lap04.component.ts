@@ -61,7 +61,7 @@ export class Lap04Component implements OnInit {
       }
     })
 
-    console.log(this.enrollment);
+    console.log(this.enrollment);   
     console.log(this.course);
   }
 

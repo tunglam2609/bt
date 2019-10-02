@@ -16,7 +16,7 @@ export class Lap05Component implements OnInit {
     {"ID":7,"FirstMidName":"Nino", "LastName":"Olivetto","EnrollmentDate":"2005-09-01" }
   ];
 
-
+  p: number = 1;
   constructor() { }
 
   ngOnInit() {
